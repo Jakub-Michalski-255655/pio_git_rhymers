@@ -4,9 +4,8 @@ public class IntLinkedList {
 
     private static final int ERROR_CODE = -1;
 	Node last;
-    int i;
 
-    public void push(int i) {
+    public void push(final int i) {
         if (last == null)
             last = new Node(i);
         else {
@@ -33,7 +32,7 @@ public class IntLinkedList {
     public int pop() {
         if (isEmpty())
             return ERROR_CODE;
-        int ret = last.value;
+        final int ret = last.value;
         last = last.prev;
         return ret;
     }
