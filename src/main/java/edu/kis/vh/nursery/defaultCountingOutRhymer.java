@@ -11,10 +11,6 @@ public class defaultCountingOutRhymer {
             NUMBERS[++total] = in;
     }
 
-    public int getTotal() {
-        return total;
-    }
-
     public boolean callCheck() {
             return total == -1;
         }
@@ -35,7 +31,4 @@ public class defaultCountingOutRhymer {
                         return NUMBERS[total--];
                     }
 
-    public void setTotal(int total) {
-        this.total = total;
-    }
 }
