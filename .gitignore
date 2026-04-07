@@ -4,3 +4,8 @@
 *.class
 *.iml
 .metadata/
+.project/
+.settings/
+.classpath
+.project
+
