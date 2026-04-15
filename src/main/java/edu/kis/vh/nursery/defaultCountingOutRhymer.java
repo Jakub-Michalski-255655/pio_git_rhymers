@@ -59,7 +59,7 @@ class HanoiRhymer extends defaultCountingOutRhymer {
 
   private static final int ZERO = 0;
   int totalRejected = ZERO;
-
+  //TODO: reportRejected should be private, add validation in CountIn to ensure only positive integers are processed
   public int reportRejected() {
     return totalRejected;
   }
